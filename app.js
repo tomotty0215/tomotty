@@ -43,7 +43,7 @@ var app = http.createServer(function (req, res) {
       res.end();
     });
   } else {
-    fs.readFile(__dirname + '/public/index.html', function (err, data) {
+    fs.readFile(__dirname + '/public/index.htm', function (err, data) {
       if (err) {
         res.writeHead(404, {'Content-Type': 'text/plain'});
         res.write('Error 404: Resource not found.');
